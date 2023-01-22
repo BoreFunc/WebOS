@@ -1,0 +1,29 @@
+{
+    /* WebOS Configuration File*/
+    "Desktop":{
+        /* Background image in /public folder */
+        "Background": "/Wallpaper1.svg"
+    },
+    /* Components List */
+    /* Automatically import using import()*/
+    /* Assuming that your component name is test, put test.tsx, css and other files under the components/test/ */
+    /* The loader will try to load components/test/test.tsx or components/test/WebOStestComponent.tsx */
+    "Components": [
+        "Terminal",
+        "Browser",
+        "FileViewer",
+        "Player",
+        // VSCode Browser Edition.
+        // Note that VSCode is licensed under Microsoft's Own License.
+        // Install it means you agreed MS's License
+        //"Code",
+        // VNC based on noVNC
+        "VNC"
+    ],
+    "Features": [
+        // Desktop GUI, disable this will cause WebOS running in TTY Mode.
+        "Desktop",
+        // Background, disable this will disable the background replacement.
+        "Background"
+    ]
+}
